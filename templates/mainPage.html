@@ -3,11 +3,12 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         {% load static %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../static/nav.css">
-        <link rel="stylesheet" href="../static/home.css">
-        <link rel="stylesheet" href="../static/main.css">
-        <link rel="stylesheet" href="../static/grid.css">
+        <link rel="stylesheet" href="{% static 'nav.css' %}">
+        <link rel="stylesheet" href="{% static 'home.css' %}">
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+        <link rel="stylesheet" href="{% static 'grid.css' %}">
     </head>
     <body>
         
@@ -52,6 +53,6 @@
             {% endfor %}
         </div>
 
-        <script src="../static/index.js"></script>
+        <script src="{% static 'index.js' %}"></script>
     </body>
 </html>
