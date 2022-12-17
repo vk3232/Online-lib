@@ -27,7 +27,7 @@ def signup(request):
             email = form.cleaned_data["email_address"]
             phone = form.cleaned_data["phone"]
             password = form.cleaned_data["password"]
-            username = "".join([firstName,lastName])
+            username = "".join([firstName,lastName,"@onlib.com"]).lower()
             if User.objects.filter(username=username).exists():
                 form = Signup() 
                 return render(request,"signup.html",{"form":form})

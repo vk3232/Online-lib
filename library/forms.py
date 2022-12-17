@@ -9,7 +9,8 @@ class Signup(forms.Form):
 	password = forms.CharField(max_length = 50,widget=forms.PasswordInput(attrs={'class':"form-attr","placeholder":"Enter Password"}))
 
 class Login(forms.Form):
-	username = forms.CharField(max_length = 100,widget=forms.TextInput(attrs={'class':"form-attr","placeholder":"Enter first_name+last_name"}))
+	username = forms.CharField(max_length =
+                            100,widget=forms.TextInput(attrs={'class':"form-attr","placeholder":"FN+LN@onlib.com"}))
 	password = forms.CharField(max_length = 50,widget=forms.PasswordInput(attrs={'class':"form-attr","placeholder":"Enter Password"}))
 
 class ContactUsForm(forms.Form):
